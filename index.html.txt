@@ -3,85 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technotronics | Advanced Laser Detection Systems</title>
+    <title>Technotronics | Advanced Laser Detection</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #020617; color: #f8fafc; font-family: 'Inter', sans-serif; }
-        .hero-glow { background: radial-gradient(circle at center, #1e293b 0%, #020617 100%); }
-        .accent-border { border-bottom: 2px solid #3b82f6; }
-        .card-hover:hover { border-color: #3b82f6; transform: translateY(-5px); transition: 0.3s; }
+        body { font-family: 'Inter', sans-serif; color: #111827; margin: 0; }
+        .hero-bg { background: white; padding: 80px 0; border-bottom: 1px solid #e5e7eb; }
+        .btn-black { background: #000000 !important; color: white !important; padding: 12px 28px; border-radius: 4px; font-weight: 600; transition: 0.3s; display: inline-block; text-decoration: none; }
+        .btn-black:hover { background: #333333 !important; }
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 100; text-decoration: none; display: flex; align-items: center; gap: 10px; }
     </style>
 </head>
-<body>
+<body class="bg-white">
 
-    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-black tracking-tighter text-blue-500">TECHNOTRONICS</div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#" class="hover:text-blue-400">Home</a>
-            <a href="#about" class="hover:text-blue-400">About</a>
-            <a href="#products" class="hover:text-blue-400">Systems</a>
-            <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <div class="bg-black text-white text-center py-2 text-sm font-medium">
+        Get 20% off this month when you try our services!
+    </div>
+
+    <nav class="flex justify-between items-center px-10 py-6 border-b border-gray-100">
+        <div class="text-xl font-bold tracking-tight text-black">TECHNOTRONICS</div>
+        <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+            <a href="#" class="text-black no-underline hover:text-gray-500">Home</a>
+            <a href="#about" class="text-black no-underline hover:text-gray-500">About Us</a>
+            <a href="#products" class="text-black no-underline hover:text-gray-500">Systems</a>
+            <a href="#contact" class="text-black no-underline hover:text-gray-500">Contact</a>
         </div>
-        <a href="#contact" class="bg-blue-600 px-5 py-2 rounded-full font-bold text-sm hover:bg-blue-500">GET IN TOUCH</a>
     </nav>
 
-    <section class="hero-glow pt-20 pb-32 px-6 text-center border-b border-slate-800">
+    <section class="hero-bg text-center px-6">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-                SEE BEYOND THE <span class="text-blue-500 text-shadow-lg">UNSEEN</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-black">
+                Advanced Laser Detection Systems for Safe Driving
             </h1>
-            <p class="text-xl text-slate-400 mb-10 leading-relaxed">
-                Advanced Laser Detection Systems for safer driving. Detect obstacles in fog, rain, and darkness with military-grade precision.
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                See beyond fog, rain, and darkness with long-range laser detection technology designed to prevent accidents.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="mailto:technotonics.uk@gmail.com" class="bg-blue-600 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] transition">Inquire Now</a>
-                <a href="#about" class="border border-slate-700 px-10 py-4 rounded-lg font-bold text-lg hover:bg-slate-800">Learn More</a>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="btn-black">Shop Now</a>
+                <a href="#about" class="border border-black text-black px-7 py-3 rounded font-semibold hover:bg-gray-50 no-underline">Learn More</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 card-hover">
-                <div class="text-blue-500 text-3xl mb-4">⛈️</div>
-                <h3 class="text-xl font-bold mb-3">All-Weather Vision</h3>
-                <p class="text-slate-400">Our sensors penetrate thick fog and heavy rain where the human eye and cameras fail.</p>
-            </div>
-            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 card-hover">
-                <div class="text-blue-500 text-3xl mb-4">📏</div>
-                <h3 class="text-xl font-bold mb-3">200m Detection</h3>
-                <p class="text-slate-400">Long-range laser ranging provides critical seconds of reaction time for high-speed travel.</p>
-            </div>
-            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 card-hover">
-                <div class="text-blue-500 text-3xl mb-4">🚗</div>
-                <h3 class="text-xl font-bold mb-3">Universal Integration</h3>
-                <p class="text-slate-400">Designed for passenger vehicles, commercial fleets, and specialized emergency transport.</p>
-            </div>
+    <section id="about" class="py-20 px-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-left">
+        <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-6 text-black">High-Precision Laser Sensing for Safer Driving.</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                We specialize in advanced laser ranging devices that help drivers stay safe in challenging conditions like fog, heavy rain, dust, or low visibility.
+            </p>
+            <p class="text-gray-600 italic border-l-4 border-black pl-4">
+                "Safer driving, Smarter technology, Every road, every journey."
+            </p>
+        </div>
+        <div class="md:w-1/2 bg-gray-100 h-64 rounded-lg flex items-center justify-center border border-gray-200">
+            <span class="text-gray-400 font-bold uppercase tracking-widest text-center px-4">Technotronics<br>Laser Tech Preview</span>
         </div>
     </section>
 
-    <section class="bg-slate-900 py-16 px-6 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8 text-white">Technical Resources</h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="#" class="flex items-center space-x-2 text-blue-400 hover:text-white transition">
-                    <span>📄</span> <span>Product Brochure (PDF)</span>
-                </a>
-                <a href="#" class="flex items-center space-x-2 text-blue-400 hover:text-white transition">
-                    <span>📖</span> <span>User Manual V1.0</span>
-                </a>
-            </div>
+    <section id="products" class="bg-gray-50 py-16 px-10 text-center border-y border-gray-200">
+        <h2 class="text-2xl font-bold mb-10 text-black uppercase tracking-widest">Downloads</h2>
+        <div class="flex justify-center gap-10">
+            <a href="#" class="font-bold text-blue-600 underline">Product Brochure (PDF)</a>
+            <a href="#" class="font-bold text-blue-600 underline">User Manual V1.0</a>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">Get in touch!</h2>
-        <p class="text-slate-400 mb-8">Have a technical question? Let us know, and we'll get back to you soon.</p>
-        <a href="mailto:technotonics.uk@gmail.com" class="text-2xl font-bold text-blue-500 hover:underline">technotonics.uk@gmail.com</a>
-        <div class="mt-12 text-slate-600 text-sm">
+    <footer id="contact" class="bg-black text-white py-16 px-10 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-white">Get in touch!</h2>
+        <p class="text-gray-400 mb-6">technotonics.uk@gmail.com</p>
+        <div class="text-gray-500 text-sm italic">United Kingdom | Mon - Fri: 09:00 - 17:00</div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-xs text-gray-600">
             &copy; 2026 Technotronics store - All Rights Reserved.
         </div>
     </footer>
+
+    <a href="https://wa.me/447000000000" class="whatsapp-btn" target="_blank">
+        <span>💬</span> Message us on WhatsApp
+    </a>
 
 </body>
 </html>
