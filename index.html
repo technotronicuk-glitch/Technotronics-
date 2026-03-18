@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technotronics | Advanced Laser Detection Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .hero-video { position: relative; width: 100%; height: 75vh; overflow: hidden; background: #000; }
+        .hero-video iframe { position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); pointer-events: none; }
+        .section-title { font-weight: 800; text-transform: uppercase; letter-spacing: -0.025em; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-black">TECHNOTRONICS</div>
+        <div class="hidden lg:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <a href="#about" class="hover:text-black">About</a>
+            <a href="#tech" class="hover:text-black">Technology</a>
+            <a href="#safety" class="hover:text-black">Safety</a>
+            <a href="#downloads" class="hover:text-black">Resources</a>
+            <a href="#faq" class="hover:text-black">FAQ</a>
+            <a href="#contact" class="hover:text-black">Contact</a>
+        </div>
+        <a href="#checkout" class="bg-black text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-gray-800 transition">ORDER NOW</a>
+    </nav>
+
+    <section class="hero-video">
+        <iframe src="https://www.youtube.com/embed/aRJQK26_v1Q?autoplay=1&mute=1&loop=1&playlist=aRJQK26_v1Q&controls=0&modestbranding=1" frameborder="0"></iframe>
+        <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white p-6">
+            <h1 class="text-5xl md:text-8xl font-black mb-4 section-title">See Beyond</h1>
+            <p class="text-xl md:text-2xl max-w-3xl font-light opacity-90">Advanced laser detection systems designed to prevent accidents in fog, rain, and darkness.</p>
+            <div class="mt-10 flex gap-4">
+                <a href="#checkout" class="bg-white text-black px-8 py-4 rounded-full font-bold">Shop Now</a>
+                <a href="#tech" class="border border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">About Technotronics</h2>
+            <h3 class="text-4xl md:text-5xl font-black mb-8 section-title">Innovating the Future of Road Safety</h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                Poor visibility causes thousands of severe accidents every year. At Technotronics, we close the "Fatal Gap" where human sight fails. Our mission is to make roads safer for everyone, everywhere.
+            </p>
+        </div>
+    </section>
+
+    <section id="tech" class="py-24 px-6 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-3xl mb-4">🛰️</div>
+                    <h4 class="font-bold text-lg mb-2">400m Detection</h4>
+                    <p class="text-sm text-gray-500">Long-range 905nm laser pulses penetrate fog and rain where eyes cannot.</p>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-3xl mb-4">🌡️</div>
+                    <h4 class="font-bold text-lg mb-2">Environmental Sensing</h4>
+                    <p class="text-sm text-gray-500">Integrated Si7021 sensors track temperature and humidity for context.</p>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-3xl mb-4">⚡</div>
+                    <h4 class="font-bold text-lg mb-2">Real-Time Data</h4>
+                    <p class="text-sm text-gray-500">Visualization of distance, speed, and collision time across long distances.</p>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-3xl mb-4">🛡️</div>
+                    <h4 class="font-bold text-lg mb-2">Ruggedized Design</h4>
+                    <p class="text-sm text-gray-500">ABS + Carbon Fiber composite casing ensures durability in the field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="safety" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="bg-black aspect-video rounded-3xl flex items-center justify-center text-white font-bold p-12 text-center border-4 border-gray-100 italic">
+                "By the time you see an object in fog, you have already run out of braking distance."
+            </div>
+            <div>
+                <h2 class="text-3xl font-black mb-6 section-title text-red-600">The Fatal Gap</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="font-black text-gray-300">01</span>
+                        <p class="text-gray-600"><strong>Contrast Collapse:</strong> Fog erases depth, making objects invisible until impact.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="font-black text-gray-300">02</span>
+                        <p class="text-gray-600"><strong>Photonic Scattering:</strong> Rain and snow reflect light, masking road hazards.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="font-black text-gray-300">03</span>
+                        <p class="text-gray-600"><strong>Depth Deficit:</strong> Low light misjudges speed and distance.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="downloads" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-black mb-4 section-title">Resource Center</h2>
+            <p class="text-gray-500 mb-16">Access official technical documentation and product specifications.</p>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-12 rounded-[2.5rem] shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">PDF</div>
+                    <h3 class="font-black text-xl mb-4">Product Brochure</h3>
+                    <p class="text-gray-500 text-sm mb-8">Detailed specifications for TC25-400, TC25-1000, and TC22-1500 modules.</p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="Technotronics Product Bouchure.pdf" target="_blank" class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-1">View</a>
+                        <a href="Technotronics Product Bouchure.pdf" download class="text-xs font-black uppercase tracking-widest bg-black text-white px-6 py-2 rounded-full">Download</a>
+                    </div>
+                </div>
+                <div class="bg-white p-12 rounded-[2.5rem] shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">PDF</div>
+                    <h3 class="font-black text-xl mb-4">User Manual V.1</h3>
+                    <p class="text-gray-500 text-sm mb-8">Installation guide, safety protocols, and operational workflows for DriveSense.</p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="User Manual Drive-Sense V.1.pdf" target="_blank" class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-1">View</a>
+                        <a href="User Manual Drive-Sense V.1.pdf" download class="text-xs font-black uppercase tracking-widest bg-black text-white px-6 py-2 rounded-full">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16 section-title">Get DriveSense V.1</h2>
+            <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+            <stripe-pricing-table 
+                pricing-table-id="prctbl_1TCN78QVJDTaBDwe8w9oW5jO"
+                publishable-key="pk_live_51T0olbQVJDTaBDweenMDKhNPcx1kWFX4g3XShmcaQ7BhpcYV7ebwHUJkfFw6vIgrhZkA1lV6yYQV9n2hMB4MrrdL00O4vSHYO4">
+            </stripe-pricing-table>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black text-white py-24 px-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16">
+            <div class="col-span-2">
+                <div class="text-3xl font-black mb-6">TECHNOTRONICS</div>
+                <p class="text-gray-500 max-w-sm mb-8">One device can save a life. Join us in making roads safer for everyone, everywhere.</p>
+                <div class="flex gap-6">
+                    <a href="mailto:technotonics.uk@gmail.com" class="text-sm font-bold border-b border-white pb-1">Email Us</a>
+                    <a href="https://wa.me/447704844276" class="text-sm font-bold border-b border-white pb-1">WhatsApp</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase text-gray-600 mb-8 tracking-widest">Global HQ</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    128 City Road<br>
+                    London, EC1V 2NX<br>
+                    United Kingdom
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase text-gray-600 mb-8 tracking-widest">Legal</h4>
+                <ul class="text-sm text-gray-400 space-y-4">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
