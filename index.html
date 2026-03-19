@@ -22,7 +22,6 @@
             <a href="#tech" class="hover:text-black">Technology</a>
             <a href="#safety" class="hover:text-black">Safety</a>
             <a href="#downloads" class="hover:text-black">Resources</a>
-            <a href="#faq" class="hover:text-black">FAQ</a>
             <a href="#contact" class="hover:text-black">Contact</a>
         </div>
         <a href="#checkout" class="bg-black text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-gray-800 transition">ORDER NOW</a>
@@ -101,6 +100,64 @@
             </div>
         </div>
     </section>
+    <section id="gallery" class="py-24 bg-gray-50 border-y border-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">The Hardware</h2>
+            <p class="text-gray-500 font-bold uppercase text-[10px] tracking-[0.3em]">Precision Engineering by Technotronics</p>
+        </div>
+
+        <div class="relative overflow-hidden rounded-[3rem] shadow-2xl bg-black aspect-video group">
+            
+            <div class="mySlides fade h-full relative">
+                <img src="scanner-hero.jpg" class="w-full h-full object-cover opacity-80">
+                <div class="absolute bottom-12 left-12 text-white">
+                    <h3 class="text-2xl font-black uppercase">The Scanner</h3>
+                    <p class="text-sm opacity-70">Ruggedized Carbon Fiber & 905nm Laser Unit</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade h-full hidden relative">
+                <img src="receiver-hero.jpg" class="w-full h-full object-cover opacity-80">
+                <div class="absolute bottom-12 left-12 text-white">
+                    <h3 class="text-2xl font-black uppercase">The Receiver</h3>
+                    <p class="text-sm opacity-70">Portable Command Hub with 2.8" TFT Display</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade h-full hidden relative">
+                <img src="night-test.jpg" class="w-full h-full object-cover opacity-80">
+                <div class="absolute bottom-12 left-12 text-white">
+                    <h3 class="text-2xl font-black uppercase">Field Performance</h3>
+                    <p class="text-sm opacity-70">Penetrating Fog & Darkness at 400m+</p>
+                </div>
+            </div>
+
+            <a class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-4 rounded-full cursor-pointer text-white font-bold" onclick="plusSlides(-1)">❮</a>
+            <a class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-4 rounded-full cursor-pointer text-white font-bold" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+</section>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.add("hidden");
+  }
+  slides[slideIndex-1].classList.remove("hidden");  
+}
+</script>
 
     <section id="downloads" class="py-24 px-6 bg-gray-50">
         <div class="max-w-5xl mx-auto text-center">
@@ -160,10 +217,13 @@
                 </p>
             </div>
             <div>
-                <h4 class="text-xs font-bold uppercase text-gray-600 mb-8 tracking-widest">Legal</h4>
-                <ul class="text-sm text-gray-400 space-y-4">
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
+                <h4 class="text-[10px] font-bold uppercase text-gray-600 mb-8 tracking-[0.2em]">Compliance & Support</h4>
+<ul class="text-xs text-gray-400 space-y-4 font-bold uppercase tracking-widest">
+    <li><a href="faq.html" class="hover:text-white transition">FAQ</a></li>
+    <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+    <li><a href="terms.html" class="hover:text-white transition">Terms & Conditions</a></li>
+    <li><a href="refund.html" class="hover:text-white transition">Refund Policy</a></li>
+    <li><a href="ip-protection.html" class="hover:text-white transition">Intellectual Property</a></li>
                 </ul>
             </div>
         </div>
