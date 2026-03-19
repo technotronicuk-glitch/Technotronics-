@@ -37,88 +37,59 @@
         </div>
         <a href="#checkout" class="bg-black text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-gray-800 transition">ORDER NOW</a>
     </nav>
-
-    <section class="hero-video">
-        <iframe src="https://www.youtube.com/embed/aRJQK26_v1Q?autoplay=1&mute=1&loop=1&playlist=aRJQK26_v1Q&controls=0&modestbranding=1" frameborder="0"></iframe>
-        <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white p-6">
-            <h1 class="text-5xl md:text-8xl font-black mb-4 section-title">See Beyond</h1>
-            <p class="text-xl md:text-2xl max-w-3xl font-light opacity-90">Advanced laser detection systems designed to prevent accidents in fog, rain, and darkness.</p>
-            <div class="mt-10 flex gap-4">
-                <a href="#checkout" class="bg-white text-black px-8 py-4 rounded-full font-bold">Shop Now</a>
-                <a href="#tech" class="border border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Learn More</a>
-            </div>
+    
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="text-3xl font-black tracking-tighter text-black uppercase">TECHNOTRONICS</div>
+        
+        <div class="hidden md:flex space-x-10 items-center">
+            <a href="#" class="text-[11px] font-bold text-black uppercase tracking-[0.2em] border-b-2 border-black pb-1">Home</a>
+            <a href="#about" class="text-[11px] font-bold text-gray-500 hover:text-black uppercase tracking-[0.2em] transition">About Us</a>
+            <a href="#news" class="text-[11px] font-bold text-gray-500 hover:text-black uppercase tracking-[0.2em] transition">News</a>
+            
+            <a href="#account" class="ml-4 px-6 py-2 bg-gray-100 text-black text-[11px] font-black uppercase tracking-widest rounded-md hover:bg-black hover:text-white transition-all">
+                Account
+            </a>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section id="about" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">About Technotronics</h2>
-            <h3 class="text-4xl md:text-5xl font-black mb-8 section-title">Innovating the Future of Road Safety</h3>
-            <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                Poor visibility causes thousands of severe accidents every year. At Technotronics, we close the "Fatal Gap" where human sight fails. Our mission is to make roads safer for everyone, everywhere.
-            </p>
-        </div>
-    </section>
+<section class="relative min-h-[95vh] flex items-center pt-24 overflow-hidden bg-white">
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 60px 60px;"></div>
 
-    <section id="tech" class="py-24 px-6 bg-gray-50 border-y border-gray-100">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                    <div class="text-blue-600 text-3xl mb-4">🛰️</div>
-                    <h4 class="font-bold text-lg mb-2">400m Detection</h4>
-                    <p class="text-sm text-gray-500">Long-range 905nm laser pulses penetrate fog and rain where eyes cannot.</p>
-                </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                    <div class="text-blue-600 text-3xl mb-4">🌡️</div>
-                    <h4 class="font-bold text-lg mb-2">Environmental Sensing</h4>
-                    <p class="text-sm text-gray-500">Integrated Si7021 sensors track temperature and humidity for context.</p>
-                </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                    <div class="text-blue-600 text-3xl mb-4">⚡</div>
-                    <h4 class="font-bold text-lg mb-2">Real-Time Data</h4>
-                    <p class="text-sm text-gray-500">Visualization of distance, speed, and collision time across long distances.</p>
-                </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                    <div class="text-blue-600 text-3xl mb-4">🛡️</div>
-                    <h4 class="font-bold text-lg mb-2">Ruggedized Design</h4>
-                    <p class="text-sm text-gray-500">ABS + Carbon Fiber composite casing ensures durability in the field.</p>
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            
+            <div class="md:w-1/2 text-left">
+                <h1 class="text-6xl md:text-8xl font-black text-black leading-[0.85] uppercase tracking-tighter mb-8">
+                    Advanced Laser <br>
+                    <span class="text-gray-300">Detection Systems</span> <br>
+                    for Safe Driving
+                </h1>
+                <p class="text-gray-500 text-xl mb-12 max-w-lg leading-relaxed font-medium">
+                    See beyond fog, rain, and darkness with long-range laser detection technology designed to prevent accidents.
+                </p>
+                
+                <div class="flex flex-wrap gap-6">
+                    <a href="#shop" class="px-14 py-5 bg-black text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-sm hover:bg-blue-600 transition-all shadow-2xl">
+                        Shop Now
+                    </a>
+                    <a href="#learn" class="px-14 py-5 bg-gray-100 text-black font-black uppercase tracking-[0.2em] text-[10px] rounded-sm hover:bg-gray-200 transition-all">
+                        Learn More
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="safety" class="py-24 px-6 bg-white">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-            <div class="bg-black aspect-video rounded-3xl flex items-center justify-center text-white font-bold p-12 text-center border-4 border-gray-100 italic">
-                "By the time you see an object in fog, you have already run out of braking distance."
+            <div class="md:w-1/2 relative">
+                <div class="relative z-10 group">
+                    <img src="together-1.jpg.png" alt="DriveSense System" class="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] rounded-3xl transform transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-blue-100 rounded-full blur-[120px] opacity-40 z-0"></div>
             </div>
-            <div>
-                <h2 class="text-3xl font-black mb-6 section-title text-red-600">The Fatal Gap</h2>
-                <ul class="space-y-6">
-                    <li class="flex gap-4">
-                        <span class="font-black text-gray-300">01</span>
-                        <p class="text-gray-600"><strong>Contrast Collapse:</strong> Fog erases depth, making objects invisible until impact.</p>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="font-black text-gray-300">02</span>
-                        <p class="text-gray-600"><strong>Photonic Scattering:</strong> Rain and snow reflect light, masking road hazards.</p>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="font-black text-gray-300">03</span>
-                        <p class="text-gray-600"><strong>Depth Deficit:</strong> Low light misjudges speed and distance.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <style>
-    #galleryWindow { position: relative; overflow: hidden; border-radius: 3rem; background: #000; aspect-ratio: 16/9; shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5); }
-    #slideTrain { display: flex; width: 1700%; height: 100%; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
-    .slide-item { width: calc(100% / 17); height: 100%; position: relative; flex-shrink: 0; }
-    .slide-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
-    .slide-caption { position: absolute; bottom: 3rem; left: 3rem; text-align: left; color: white; }
-</style>
 
+        </div>
+    </div>
+</section>
 <section id="gallery" class="py-24 bg-gray-50 border-y border-gray-100">
     <div class="max-w-6xl mx-auto px-6 text-center">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-12 text-black">Hardware & Field Performance</h2>
