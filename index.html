@@ -7,10 +7,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        /* Your Original Styles */
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .hero-video { position: relative; width: 100%; height: 75vh; overflow: hidden; background: #000; }
         .hero-video iframe { position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); pointer-events: none; }
         .section-title { font-weight: 800; text-transform: uppercase; letter-spacing: -0.025em; }
+
+        /* NEW: Chatbot Styles Added Below */
+        #chat-widget { position: fixed; bottom: 30px; right: 30px; z-index: 9999; }
+        .chat-popup { 
+            position: absolute; bottom: 80px; right: 0; width: 340px; 
+            background: white; border-radius: 2rem; box-shadow: 0 20px 50px rgba(0,0,0,0.2); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        /* This keeps the chatbot hidden until it's triggered */
+        .chat-popup.opacity-0 { pointer-events: none; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -131,7 +142,6 @@
 
                 <div class="slide-item"><img src="roof-1.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">12. Roof Integration A</h3></div></div>
                 <div class="slide-item"><img src="roof-2.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">13. Roof Integration B</h3></div></div>
-                <div class="slide-item"><img src="roof-3.jpg.png"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">14. Aerodynamic Profile</h3></div></div>
 
                 <div class="slide-item"><img src="package-1.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">15. Unboxing Experience</h3></div></div>
                 <div class="slide-item"><img src="package-2.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">16. Foam Protection</h3></div></div>
@@ -212,6 +222,36 @@
         </div>
     </section>
 
+    <div id="chat-widget" style="display:none; position: fixed; bottom: 30px; right: 30px; z-index: 9999;">
+    <div id="chatPopup" class="chat-popup bg-white shadow-2xl rounded-[2rem] overflow-hidden w-[350px] transition-all duration-300 opacity-0 translate-y-10 pointer-events-none border border-gray-100">
+        
+        <div class="bg-black p-6 text-white">
+            <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span class="text-[10px] font-bold uppercase tracking-widest opacity-60">AI Assistant</span>
+            </div>
+            <h4 class="text-xl font-black tracking-tighter mt-1 text-white">TECHNOTRONICS</h4>
+        </div>
+
+        <div id="chatHistory" class="h-[300px] overflow-y-auto p-6 space-y-4 text-sm bg-gray-50">
+            <div class="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 text-gray-800">
+                Welcome to Technotronics. I am your DriveSense Assistant. How may I help you today?
+            </div>
+        </div>
+
+        <div id="chatOptions" class="p-4 bg-white border-t border-gray-100 grid grid-cols-1 gap-2">
+            <button onclick="askAI('capability')" class="text-left p-3 rounded-xl border border-gray-200 text-xs font-bold hover:bg-black hover:text-white transition uppercase tracking-tight text-black">System Capabilities?</button>
+            <button onclick="askAI('adverse')" class="text-left p-3 rounded-xl border border-gray-200 text-xs font-bold hover:bg-black hover:text-white transition uppercase tracking-tight text-black">Adverse Conditions?</button>
+            <button onclick="askAI('human')" class="text-left p-3 rounded-xl border border-blue-100 bg-blue-50 text-blue-700 text-xs font-bold hover:bg-blue-600 hover:text-white transition uppercase tracking-tight">Talk to a Human / Shop</button>
+        </div>
+    </div>
+
+    <button onclick="toggleChat()" class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform active:scale-95">
+        <svg id="chatIcon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+        </svg>
+    </button>
+</div>
     <footer id="contact" class="bg-black text-white py-24 px-10">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16">
             <div class="col-span-2">
@@ -243,5 +283,50 @@
         </div>
     </footer>
 
+    <script>
+    // 1. Logic to show/hide the chat window
+    function toggleChat() {
+        const popup = document.getElementById('chatPopup');
+        popup.classList.toggle('opacity-0');
+        popup.classList.toggle('translate-y-10');
+        popup.classList.toggle('pointer-events-none');
+    }
+
+    // 2. AI Logic for answering the user
+    function askAI(topic) {
+        const history = document.getElementById('chatHistory');
+        let userMsg = "";
+        let aiResponse = "";
+
+        if(topic === 'capability') {
+            userMsg = "What are the system capabilities?";
+            aiResponse = "DriveSense V.1 uses a 905nm pulsed laser with a 400m range and a massive 9000mAh battery. It features dual-axis X-Y scanning for high-precision object detection.";
+        } 
+        else if(topic === 'adverse') {
+            userMsg = "Does it work in bad weather?";
+            aiResponse = "Yes. Our laser technology is specifically engineered to penetrate heavy fog, rain, and total darkness where standard cameras fail. It uses the TC25 and TC22 light-penetration modules.";
+        }
+        else if(topic === 'human') {
+            userMsg = "I want to shop or talk to a human.";
+            aiResponse = "Understood. You can explore our shop below or chat directly with our engineering team on WhatsApp.";
+            aiResponse += `<br><br><a href="https://wa.me/447704844276" class="text-green-600 font-bold underline">WhatsApp Now</a>`;
+        }
+
+        // Add the User Message to the screen
+        history.innerHTML += `<div class="flex justify-end mb-4"><div class="bg-black text-white p-3 rounded-2xl rounded-tr-none text-xs max-w-[85%]">${userMsg}</div></div>`;
+        
+        // "Thinking" delay for the AI response
+        setTimeout(() => {
+            history.innerHTML += `<div class="flex justify-start mb-4"><div class="bg-white border border-gray-100 p-3 rounded-2xl rounded-tl-none shadow-sm text-xs text-gray-700 max-w-[85%]">${aiResponse}</div></div>`;
+            history.scrollTop = history.scrollHeight;
+        }, 600);
+    }
+
+    // 3. Show the button after 3 seconds of visiting
+    setTimeout(() => { 
+        document.getElementById('chat-widget').style.display = 'block'; 
+    }, 3000);
+</script>
+    
 </body>
 </html>
