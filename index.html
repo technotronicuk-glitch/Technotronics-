@@ -100,93 +100,78 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-24 bg-gray-50 border-y border-gray-100">
+    <style>
+    #galleryWindow { position: relative; overflow: hidden; border-radius: 3rem; background: #000; aspect-ratio: 16/9; shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5); }
+    #slideTrain { display: flex; width: 1700%; height: 100%; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+    .slide-item { width: calc(100% / 17); height: 100%; position: relative; flex-shrink: 0; }
+    .slide-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
+    .slide-caption { position: absolute; bottom: 3rem; left: 3rem; text-align: left; color: white; }
+</style>
+
+<section id="gallery" class="py-24 bg-gray-50 border-y border-gray-100">
     <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-12">Hardware & Field Performance</h2>
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-12 text-black">Hardware & Field Performance</h2>
 
-        <div class="relative overflow-hidden rounded-[3rem] shadow-2xl bg-black aspect-video group">
-            
-            <div class="mySlides fade h-full relative">
-                <img src="scanner-main.jpg.png" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">01. The Scanner Unit</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="receiver-main.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">02. The Remote Receiver</h3></div>
-            </div>
+        <div id="galleryWindow" class="group">
+            <div id="slideTrain">
+                <div class="slide-item"><img src="scanner-main.jpg.png"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">01. Scanner Unit</h3></div></div>
+                <div class="slide-item"><img src="receiver-main.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">02. Remote Receiver</h3></div></div>
 
-            <div class="mySlides fade h-full hidden relative">
-                <img src="laser-1.jpg.webp" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">03. 905nm Pulse Analysis</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="laser-2.jpg.webp" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">04. Beam Collimation</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="laser-3.jpg.avif" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">05. Multi-Axis Scanning</h3></div>
-            </div>
+                <div class="slide-item"><img src="laser-1.jpg.webp"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">03. 905nm Pulse Analysis</h3></div></div>
+                <div class="slide-item"><img src="laser-2.jpg.webp"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">04. Beam Collimation</h3></div></div>
+                <div class="slide-item"><img src="laser-3.jpg.avif"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">05. Multi-Axis Scanning</h3></div></div>
 
-            <div class="mySlides fade h-full hidden relative">
-                <img src="together-1.jpg.png" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">06. System Integration (View A)</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="together-2.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">07. System Integration (View B)</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="together-3.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">08. Scanner & Receiver Set</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="together-4.jpg.jpg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase text-blue-400">09. Dual-Unit Calibration</h3></div>
+                <div class="slide-item"><img src="together-1.jpg.png"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">06. System Integration A</h3></div></div>
+                <div class="slide-item"><img src="together-2.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">07. System Integration B</h3></div></div>
+                <div class="slide-item"><img src="together-3.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">08. Hardware Set</h3></div></div>
+                <div class="slide-item"><img src="together-4.jpg.jpg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">09. Dual-Unit Calibration</h3></div></div>
+
+                <div class="slide-item"><img src="working-day.jpg.png"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">10. Daytime Interface</h3></div></div>
+                <div class="slide-item"><img src="working-night.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">11. Night-Vision Telemetry</h3></div></div>
+
+                <div class="slide-item"><img src="roof-1.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">12. Roof Integration A</h3></div></div>
+                <div class="slide-item"><img src="roof-2.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">13. Roof Integration B</h3></div></div>
+                <div class="slide-item"><img src="roof-3.jpg.png"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">14. Aerodynamic Profile</h3></div></div>
+
+                <div class="slide-item"><img src="package-1.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">15. Unboxing Experience</h3></div></div>
+                <div class="slide-item"><img src="package-2.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">16. Foam Protection</h3></div></div>
+                <div class="slide-item"><img src="package-3.jpg.jpeg"><div class="slide-caption"><h3 class="text-2xl font-black uppercase">17. Ready for Shipment</h3></div></div>
             </div>
 
-            <div class="mySlides fade h-full hidden relative">
-                <img src="working-day.jpg.png" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">10. Daytime Interface</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="working-night.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">11. Night-Vision Telemetry</h3></div>
-            </div>
-
-            <div class="mySlides fade h-full hidden relative">
-                <img src="roof-1.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">12. Roof Integration A</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="roof-2.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">13. Roof Integration B</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="roof-3.jpg.png" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">14. Aerodynamic Profile</h3></div>
-            </div>
-
-            <div class="mySlides fade h-full hidden relative">
-                <img src="package-1.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">15. Unboxing Experience</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="package-2.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">16. Precision Foam Protection</h3></div>
-            </div>
-            <div class="mySlides fade h-full hidden relative">
-                <img src="package-3.jpg.jpeg" class="w-full h-full object-cover opacity-80">
-                <div class="absolute bottom-12 left-12 text-white text-left"><h3 class="text-2xl font-black uppercase">17. Ready for Shipment</h3></div>
-            </div>
-
-            <a class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/40 p-6 rounded-full cursor-pointer text-white" onclick="plusSlides(-1)">❮</a>
-            <a class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/40 p-6 rounded-full cursor-pointer text-white" onclick="plusSlides(1)">❯</a>
+            <button onclick="moveSlides(-1)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/50 p-5 rounded-full text-white z-10">❮</button>
+            <button onclick="moveSlides(1)" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/50 p-5 rounded-full text-white z-10">❯</button>
         </div>
-        
-        <p class="mt-6 text-gray-400 text-xs font-bold uppercase tracking-widest">Explore the DriveSense V.1 Eco-System</p>
+        <p class="mt-8 text-gray-400 text-[10px] font-bold uppercase tracking-[0.3em]">Automated System Tour • 5s Interval</p>
     </div>
 </section>
+
+<script>
+    let currentPos = 0;
+    const slideTrain = document.getElementById('slideTrain');
+    const totalImages = 17;
+    let timer;
+
+    function moveSlides(n) {
+        clearInterval(timer); // Stop auto-play when user clicks
+        currentPos += n;
+        if (currentPos >= totalImages) currentPos = 0;
+        if (currentPos < 0) currentPos = totalImages - 1;
+        
+        slideTrain.style.transform = `translateX(-${(currentPos * 100) / totalImages}%)`;
+        startTimer(); // Restart auto-play
+    }
+
+    function startTimer() {
+        timer = setInterval(() => {
+            currentPos++;
+            if (currentPos >= totalImages) currentPos = 0;
+            slideTrain.style.transform = `translateX(-${(currentPos * 100) / totalImages}%)`;
+        }, 5000); // 5 Seconds
+    }
+
+    // Initialize
+    startTimer();
+</script>
 
     <section id="downloads" class="py-24 px-6 bg-gray-50">
         <div class="max-w-5xl mx-auto text-center">
