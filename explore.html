@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DriveSense | Technotronics Hardware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.6; color: #333; }
+        .explore-container { max-width: 1000px; margin: 0 auto; padding: 80px 24px; }
+        h1 { font-weight: 800; text-transform: uppercase; letter-spacing: -0.05em; font-size: 3rem; margin-bottom: 2rem; color: #000; }
+        h2 { font-weight: 800; text-transform: uppercase; font-size: 1.5rem; margin-top: 4rem; margin-bottom: 1.5rem; color: #000; border-left: 4px solid #000; padding-left: 1rem; }
+        .spec-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: #9ca3af; letter-spacing: 0.1em; }
+        .spec-value { font-size: 1.1rem; font-weight: 600; color: #000; }
+        .product-card { background: #f9fafb; border-radius: 2rem; padding: 3rem; margin-bottom: 3rem; border: 1px solid #f3f4f6; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div class="explore-container">
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">← Back to Main Site</a>
+        
+        <h1 class="mt-12">The Hardware <br><span class="text-gray-400">Behind the Vision.</span></h1>
+        <p class="text-lg text-gray-500 max-w-2xl mb-16">High-precision LiDAR technology paired with long-range wireless telemetry to keep you safe in every condition[cite: 11, 149, 170].</p>
+
+        <section class="product-card">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="mt-0">The Scanner Unit</h2>
+                    <p class="mb-8">The primary sensory unit, engineered for high-fidelity spatial mapping using a pulsed 905nm laser[cite: 150, 151, 152]. It functions as a self-contained LiDAR station encased in ruggedized ABS and Carbon Fiber[cite: 152, 165].</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div><p class="spec-label">Laser Type</p><p class="spec-value">905nm Pulsed [cite: 155]</p></div>
+                        <div><p class="spec-label">Battery</p><p class="spec-value">9000mAh [cite: 161]</p></div>
+                        <div><p class="spec-label">Casing</p><p class="spec-value">Carbon Fiber [cite: 153]</p></div>
+                        <div><p class="spec-label">Mechanism</p><p class="spec-value">Dual-Axis X-Y [cite: 156]</p></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="working-night.jpg.jpeg" alt="DriveSense Scanner" class="w-full h-auto rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <section class="product-card">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <h2 class="mt-0">The Receiver Hub</h2>
+                    <p class="mb-8">The central command hub for real-time visualization[cite: 167, 168]. It decouples display from hardware for safe, long-range observation[cite: 169]. Features a 2.8-inch TFT LCD and integrated audio alerts[cite: 160, 172].</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div><p class="spec-label">Display</p><p class="spec-value">ILI9341 TFT LCD [cite: 172]</p></div>
+                        <div><p class="spec-label">Battery</p><p class="spec-value">5000mAh [cite: 174]</p></div>
+                        <div><p class="spec-label">Interface</p><p class="spec-value">Polycarbonate [cite: 160]</p></div>
+                        <div><p class="spec-label">Weight</p><p class="spec-value">364g [cite: 179]</p></div>
+                    </div>
+                </div>
+                <div class="md:order-1">
+                    <img src="together-1.jpg.png" alt="DriveSense Receiver" class="w-full h-auto rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-20">
+            <h2 class="text-center border-none">Available Laser Range Models</h2>
+            <p class="text-center text-gray-500 mb-12">Modular solutions designed for every use case, from city roads to industrial fleets[cite: 108, 111].</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <thead class="bg-black text-white text-[10px] uppercase tracking-widest">
+                        <tr>
+                            <th class="p-6 text-left font-bold">Model</th>
+                            <th class="p-6 text-left font-bold">Detection Range </th>
+                            <th class="p-6 text-left font-bold">Frequency </th>
+                            <th class="p-6 text-left font-bold">Accuracy </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-gray-50 bg-gray-50/50">
+                            <td class="p-6 font-bold text-black">TC25-400</td>
+                            <td class="p-6">3 - 400m</td>
+                            <td class="p-6">1 - 3Hz</td>
+                            <td class="p-6">±1m</td>
+                        </tr>
+                        <tr class="border-b border-gray-50">
+                            <td class="p-6 font-bold text-black">TC25-1000</td>
+                            <td class="p-6">3 - 1000m</td>
+                            <td class="p-6">1 - 3Hz</td>
+                            <td class="p-6">±1m</td>
+                        </tr>
+                        <tr class="border-b border-gray-50 bg-gray-50/50">
+                            <td class="p-6 font-bold text-black">TC22-1500</td>
+                            <td class="p-6">3 - 1500m</td>
+                            <td class="p-6">Up to 100Hz</td>
+                            <td class="p-6">±1m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mt-32 py-20 bg-black rounded-[3rem] text-center text-white">
+            <h2 class="border-none text-white text-3xl mb-4">Ready to upgrade your safety?</h2>
+            <p class="text-gray-400 mb-10">Select the model that fits your needs and start seeing beyond invisibility[cite: 3, 111].</p>
+            <a href="index.html#checkout" class="px-12 py-4 bg-white text-black font-black uppercase tracking-widest text-[10px] rounded-full hover:bg-blue-600 hover:text-white transition-all shadow-xl">Order Your Unit</a>
+        </section>
+
+    </div>
+
+</body>
+</html>
