@@ -161,42 +161,46 @@
 
 <section id="checkout" class="py-24 px-6 bg-gray-50 flex justify-center">
     <div class="max-w-md w-full bg-white p-10 rounded-3xl shadow-2xl border border-gray-100 text-center">
-        <h2 class="text-3xl font-black mb-2 uppercase tracking-tighter text-black">Secure Order</h2>
+        <h2 class="text-3xl font-black mb-1 uppercase tracking-tighter text-black">SECURE ORDER</h2>
         <p class="text-gray-400 text-[10px] mb-8 uppercase tracking-[0.3em] font-bold">Technotronics Verified</p>
         
-        <div class="bg-gray-100/50 rounded-3xl p-6 mb-8 border border-gray-100/50">
-            <img src="path/to/drivesense_v1.jpg.png" alt="Drivesense V1" class="w-full h-auto object-contain max-h-[160px] rounded-2xl mx-auto shadow-sm">
+        <div class="bg-gray-50 rounded-2xl mb-6 overflow-hidden border border-gray-100 flex items-center justify-center p-4">
+            <img src="drivesense_v1.jpg.png" alt="Drivesense V1" class="max-h-48 w-auto object-contain hover:scale-105 transition-transform duration-500">
         </div>
 
-        <div class="bg-gray-50 rounded-2xl p-6 mb-8 text-left border border-gray-100">
-            <div class="flex justify-between items-center mb-4">
-                <span class="text-gray-500 font-bold text-xs uppercase tracking-widest">Product</span>
-                <span class="font-black text-black">Drivesense V1</span>
+        <div class="text-left mb-8 px-2">
+            <div class="flex justify-between items-end mb-1">
+                <span class="text-gray-400 font-bold text-[10px] uppercase tracking-widest">Product</span>
+                <span class="font-black text-black uppercase text-sm">Drivesense V1</span>
             </div>
-            <div class="flex justify-between items-center border-t border-gray-200 pt-4 mt-2">
+            <div class="h-[1px] bg-gray-100 w-full mb-4"></div>
+            <div class="flex justify-between items-center">
                 <span class="text-black font-black uppercase text-xs tracking-widest">Total Amount</span>
-                <span class="font-black text-2xl text-black">2,107.30 <span class="text-sm">RON</span></span>
+                <div class="text-right">
+                    <span class="font-black text-3xl text-black">2,107.30</span>
+                    <span class="text-xs font-bold text-gray-400 ml-1">RON</span>
+                </div>
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div class="space-y-6">
             <a href="https://buy.stripe.com/3cI7sN2LcdLLfqd0cl4ow02" 
                target="_blank"
-               class="flex items-center justify-center w-full py-5 bg-black text-white font-black rounded-xl hover:bg-gray-800 transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg uppercase tracking-widest text-sm">
-                Proceed to Secure Checkout
+               class="flex items-center justify-center w-full py-5 bg-black text-white font-black rounded-xl hover:bg-gray-900 transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-[0.2em] text-xs">
+                Proceed to Checkout
             </a>
             
-            <div class="flex justify-center items-center space-x-4 opacity-50 grayscale hover:grayscale-0 transition-all">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_Pay_logo.svg" alt="Apple Pay" class="h-5">
+            <div class="flex justify-center items-center gap-5 opacity-40 hover:opacity-100 transition-opacity duration-500">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" alt="PayPal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-3" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-5" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_Pay_logo.svg" class="h-5" alt="Apple Pay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Pay_Logo_%282020%29.svg" class="h-4" alt="Google Pay">
             </div>
         </div>
 
-        <p class="mt-8 text-[9px] text-gray-400 uppercase font-bold tracking-[0.2em] leading-relaxed">
-            Payment handled securely by Stripe.<br>
-            Apple Pay, Google Pay, and Cards accepted.
+        <p class="mt-10 text-[9px] text-gray-400 uppercase font-bold tracking-[0.2em] leading-relaxed max-w-[250px] mx-auto">
+            Encrypted Checkout <br> Powered by Stripe Global
         </p>
     </div>
 </section>
