@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .auth-input { w-full; px-4; py-4; border: 1px solid #e5e7eb; border-radius: 0.125rem; outline: none; transition: all 0.2s; background: #f9fafb; }
-        .auth-input:focus { border-color: #2563eb; background: #fff; }
+        .auth-input { width: 100%; px-4; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 0.125rem; outline: none; transition: all 0.2s; background: #f9fafb; }
+        .auth-input:focus { border-color: #000; background: #fff; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -21,44 +21,36 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-20">
-        <div class="grid md:grid-cols-2 gap-24">
+    <main class="max-w-7xl mx-auto px-6 py-24 flex justify-center">
+        
+        <div class="bg-gray-50 p-10 md:p-16 rounded-[3rem] w-full max-w-xl shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-black uppercase tracking-tighter mb-4 text-center">Customer Login</h2>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-10 text-center">
+                Access your DriveSense V.1 telemetry & diagnostics
+            </p>
             
-            <div>
-                <h1 class="text-4xl font-black uppercase tracking-tighter mb-6">Join Our <br><span class="text-gray-400">Mailing List</span></h1>
-                <p class="text-gray-500 mb-10 leading-relaxed">Stay updated with the latest in 905nm laser technology, regional safety hotspots, and the release of our 2000m long-range aerodynamic models[cite: 110, 112].</p>
+            <form action="#" class="space-y-4">
+                <input type="text" placeholder="USERNAME / EMAIL" class="auth-input bg-white text-[10px] font-bold tracking-widest uppercase">
+                <input type="password" placeholder="PASSWORD" class="auth-input bg-white text-[10px] font-bold tracking-widest uppercase">
                 
-                <form action="#" class="space-y-4">
-                    <input type="text" placeholder="Full Name" class="auth-input">
-                    <input type="email" placeholder="Email Address*" required class="auth-input">
-                    <div class="flex items-center gap-3 py-2">
-                        <input type="checkbox" id="terms" class="w-4 h-4 rounded">
-                        <label for="terms" class="text-xs text-gray-400 uppercase font-bold tracking-widest">I accept the Privacy Policy</label>
-                    </div>
-                    <button type="submit" class="w-full py-5 bg-black text-white font-black uppercase tracking-widest text-xs hover:bg-blue-600 transition-all">Subscribe</button>
-                </form>
-            </div>
-
-            <div class="bg-gray-50 p-10 md:p-16 rounded-[3rem]">
-                <h2 class="text-3xl font-black uppercase tracking-tighter mb-6">Customer Login</h2>
-                <p class="text-sm text-gray-500 mb-10">Access your DriveSense V.1 telemetry, real-time distance logs, and system diagnostics[cite: 92, 101].</p>
+                <div class="flex justify-end items-center pt-2">
+                    <a href="#" class="text-[10px] font-bold uppercase text-gray-400 hover:text-black tracking-widest transition">Forgot Password?</a>
+                </div>
                 
-                <form action="#" class="space-y-4">
-                    <input type="text" placeholder="Username / Email" class="auth-input bg-white">
-                    <input type="password" placeholder="Password" class="auth-input bg-white">
-                    <div class="flex justify-between items-center pt-2">
-                        <a href="#" class="text-[10px] font-bold uppercase text-gray-400 hover:text-black">Forgot Password?</a>
-                    </div>
-                    <button type="submit" class="w-full py-5 bg-blue-600 text-white font-black uppercase tracking-widest text-xs hover:bg-black transition-all shadow-xl">Login to Dashboard</button>
-                    <p class="text-center mt-6 text-xs font-bold text-gray-400 uppercase tracking-widest">New User? <a href="#" class="text-blue-600">Create Account</a></p>
-                </form>
-            </div>
-
+                <button type="submit" class="w-full py-5 bg-black text-white font-black uppercase tracking-[0.2em] text-[10px] hover:bg-gray-800 transition-all shadow-xl rounded-md active:scale-95">
+                    Login to Dashboard
+                </button>
+                
+                <p class="text-center mt-8 text-[9px] font-black text-gray-300 uppercase tracking-[0.2em]">
+                    New User? <a href="#" class="text-black hover:underline">Create Account</a>
+                </p>
+            </form>
         </div>
+
     </main>
 
     <footer class="py-10 text-center text-[10px] font-bold text-gray-300 uppercase tracking-[0.3em]">
-        Technotronics Ltd. London HQ © 2026 [cite: 133, 134]
+        Technotronics Ltd. London HQ © 2026
     </footer>
 
 </body>
